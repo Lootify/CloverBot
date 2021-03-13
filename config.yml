@@ -1,0 +1,344 @@
+#########################################  MUST READ  ############################################
+#                                                                                                #
+#  [!] Must Reload the bot for settings to apply. (you can do that by the "reload" command) [!]  #
+#                        [♥] Thank your for using Clover Bot [♥]                                 #
+#               [?] For any questions join the discord or contact Axie#2121 [?]                  #
+#                  [?] CloverBOT Discord: https://discord.gg/hM7czvhGEF [?]                      #
+#                                                                                                #
+#########################################  MUST READ  ############################################
+
+
+###############################
+#                             #
+#           Client            #
+#                             #
+###############################
+
+Client_Prefix: "!"
+# the bot prefix that commands will run with. (Ex. if you put "!", your help command will be "!help")
+Client_Status: "!help"
+# The bot Status that will show under your bots name. Put "Null" for no status
+Client_Token: ""
+# the bot token that you get after you create a bot (https://discord.com/developers/applications).
+Client_Owner_ID: "573990610986598400"
+# Your Discord ID (Enable Developer mode from apperance tap in settings to get it). 
+###############################
+#                             #
+#      Minecraft Server       #
+#                             #
+###############################
+
+Store_Link: "Null"
+# Your minecraft server store link. (Set it to "Null" to disable "shop" Command) 
+Site_Link: "Null"
+# Your minecraft server website link. (set it to "Null" to disable "site" Command)
+Server_IP: "Null"
+# Your Minecraft server IP. (Set it to "Null" to disable "ip" and "status" Command)
+Server_Embed_Color: "YELLOW"
+# The Embed color of the (IP,SHOP,SITE,STATUS) Message. (Ex. "GREEN")
+###############################
+#                             #
+#      Giveaways Module       #
+#                             #
+###############################
+
+Giveaway_System: "true"
+# Do you want to enable Giveaway System. set to "true" to enable it
+Giveaway_Create_Required_Role: "Giveaway"
+# the role that the User need to be able to make a Giveaway. (Ex. Giveaway)
+Giveaway_ReRoll_Required_Role: "Giveaway"
+# the role that the User need to be able to Reroll a giveaway. (Ex. Giveaway)
+Giveaway_Channel: "Giveaways"
+# the default Channel that the giveaway will be posted in. (Name of the channel NOT id) 
+Giveaway_MaxGiveaways: "10"
+# The maxmium amount of active giveaways (NUMBERS ONLY). (Ex. "10") 
+Giveaway_Emoji_Unicode: "🎉"
+# the reaction that the users click when joining a giveaway. (Ex. "🎉")
+Giveaway_Embed_Color: "RED"
+# The Embed color of the Giveaway Message. (Ex. "GREEN")
+###############################
+#                             #
+#         Music Module        #
+#                             #
+###############################
+
+Music_System: "true"
+# Do you want to enable Music System, Set to "true" to enable.
+Music_Youtube_Key: "YOUTUBE-API"
+# The Music Youtube API key. (https://developers.google.com/youtube/v3/getting-started)
+Music_Soundcloud_Id: ""
+# The SoundCloud ID key.
+Music_DJ_Role: ""
+
+Music_Max_Playlist_Size: "10"
+# Max Videos in playlist (when using !playlist). (Ex. "10")
+Music_Pruning: "true"
+# Do you want to delete the bot message after stop playing the song. set to "true" to enable it
+Music_Status: "{SONG}"
+# Change the bot status to whatever song is playing then change it back to the orginal (Ex. "🎵 {SONG}"). (if you want to disable it, Set it to "Null")
+Music_Image: "true"
+# The image that gets sent when you play an image containing (Thumbnail, Video Name, Channel Name). (set to "true" to enable it)
+Music_Image_Design: "1"
+# The image Desigh (Requires "Music_Image" to be set to "true").
+# Design 1: (1600 x 800) High Quality (Ex. )
+# Design 2:(300 x 200) Okay Quality (Ex. )
+Music_Embed_Color: "BLUE"
+# The Embed color of the Music Message. (Ex. "GREEN")
+###############################
+#                             #
+#         Join Module         #
+#                             #
+###############################
+# VARIABLES: (NOTE: This will only work in the Join_Message and EMBED OPTIONS settings)
+# {user} - This will print the user's username. 
+# {tag} - This will print the user's name with their Discord tag (Ex: Knzo#5704)
+# {total} - This will print the total amount of members in the Discord server
+
+Join_System: "false"
+
+Join_Channel: "welcome"
+
+Join_Message: "embed"
+
+Join_Role: "Null"
+# Set to "Null" if you don't want the member to recive any roles.
+Join_DM_Message: "Null"
+# Set it to "Null" if you don't want the member to Get Dmed.
+### EMBED OPTIONS ###
+# (NOTE: This requires the Join_Message setting to be "embed"
+
+Join_Embed_Header: "User Joined!"
+# This is the title of the embed
+Join_Embed_Description: "Welcome to this discord server, {user}! "
+# This is the description or main field of the embed
+Join_Embed_Footer: "Null"
+# This is the footer of the embed. Put "Null" to not have a footer in the embed.
+Join_Embed_Timestamp: "false"
+# This will add the time the user joined at to the embed's footer if set to "true"
+Join_Embed_Color: "GREEN"
+
+###############################
+#                             #
+#        Leave Module         #
+#                             #
+###############################
+# VARIABLES: (NOTE: This will only work in the Leave_Message and EMBED OPTIONS settings)
+# {user} - This will print the user's username. 
+# {tag} - This will print the user's name with their Discord tag (Ex: Knzo#5704)
+# {total} - This will print the total amount of members in the Discord server
+
+Leave_System: "false"
+# set to "true" to enable or "false" to disable
+Leave_Channel: "welcome"
+# the channel that the leave messages will be sent to.
+Leave_Message: "embed"
+# you can type any message here like "welcome {user} 👋" or just type "embed" to enable the option below
+### EMBED OPTIONS ###
+# (NOTE: This requires the Leave_Message setting to be "embed"
+
+Leave_Embed_Header: "User Left!"
+# This is the title of the embed
+Leave_Embed_Description: "Goodbye, **{user}**! "
+# This is the description or main field of the embed
+Leave_Embed_Footer: "Null"
+# This is the footer of the embed. Put "Null" to not have a footer in the embed.
+Leave_Embed_Timestamp: "false"
+# This will add the time the user joined at to the embed's footer if set to "true"
+Leave_Embed_Color: "RED"
+
+###############################
+#                             #
+#      Moderation Module      #
+#                             #
+###############################
+
+Mod_System: "true"
+# this will disable moderation commands.
+
+Mod_Lock_Role: "Staff"
+# Set to "Null" to disable
+Mod_UnLock_Role: "Staff"
+# Set to "Null" to disable
+Mod_Mute_Role: "Staff"
+# Set to "Null" to disable
+Mod_Embed_Color: "YELLOW"
+
+###############################
+#       [♥] CloverBot [♥]     #
+###############################
+
+Mod_Muted_Role: "Muted"
+# the role "muted" users will get when getting muted
+
+###############################
+#                             #
+#          Log Module         #
+#                             #
+###############################
+
+Log_System: "true"
+# enable this to log events on your server.
+Log_Channel: "log"
+# Log channel name (NOT ID)
+###############################
+#                             #
+#       Anti-Ads Module       #
+#                             #
+###############################
+
+AntiAds_System: "true"
+
+AntiAds_Bypass_Role: "Staff"
+# This is the rank required to bypass the advertisment check. Users with this role will be able to advertise freely!
+
+AntiAds_Bypass_Channels: 
+  - "Advertise"
+# channels that links is allowed in.
+AntiAds_Whitelisted_Websites:
+  - "google.com"
+  - "gyazo.com"
+  - "youtube.com"
+  - "imgur.com"
+# These are websites that bypass the advertisement check. Users will be allow to post links or use these websites in their statuses that are from these sites.
+
+AntiAds_Embed_Color: "PINK"
+###############################
+#                             #
+#       AntiSpam Module       #
+#                             #
+###############################
+
+AntiSpam_System: "true"
+# Do you want to enable Anti-Spam System. Set "true" to enable it
+AntiSpam_Bypass_Role: "Staff"
+# anyone who have this role will be able to spam freely! (EX. "Staff")
+AntiSpam_Bypass_Channels:
+- "Youtube"
+- "spam"
+# discord channels that spamming is allowed in them. (Ex. "Spam")
+AntiSpam_Amount: "500"
+# Time between each message. (in millseconds)
+AntiSpam_Delete_Messages: "true"
+# Do you want it to delete Spam messages after triggering the AntiSpam System. set "true" to enable it
+AntiSpam_Mute: "false"
+# Do you want the member to be Muted after continuing to spam. set "true" enable it
+AntiSpam_Mute_Time: ""
+# the time the member will be muted for (in millseoncds). (Needs "AntiSpam_Mute" to be enabled to work.)
+
+###############################
+#                             #
+#        Filter Module        #
+#                             #
+###############################
+
+Filter_System: "true"
+# Do you want to enable Filter System. Set "true" to enable it
+Filter_Bypass_Role: "Staff"
+# The role to bypass the filter, type "Null" if you don't want anybody to pass it.
+Filter_Bypass_Channels: 
+- "Staff"
+# the channels that this filter is disabled in.
+Filter_Words: 
+- "fuck"
+- "abbo"
+- "abo"
+- "beeyotch"
+- "biatch"
+- "bitch"
+- "chinaman"
+- "chinamen"
+- "chink"
+- "coolie"
+- "coon"
+- "crazie"
+- "crazy"
+- "crip"
+- "cuck"
+- "cunt"
+- "dago"
+- "daygo"
+- "dego"
+- "dick"
+- "douchebag"
+- "dumb"
+- "dyke"
+- "eskimo"
+- "fag"
+- "faggot"
+- "fatass"
+- "fatso"
+- "gash"
+- "gimp"
+- "golliwog"
+- "gook"
+- "goy"
+- "goyim"
+- "gyp"
+- "gypsy"
+- "half-breed"
+- "halfbreed"
+- "heeb"
+- "homo"
+- "hooker"
+- "idiot"
+- "insane"
+- "insanitie"
+- "insanity"
+- "jap"
+- "kaffer"
+- "kaffir"
+- "kaffir"
+- "kaffre"
+- "kafir"
+- "kike"
+- "kraut"
+- "lame"
+- "lardass"
+- "lesbo"
+- "lunatic"
+- "mick"
+- "negress"
+- "negro"
+- "nigg"
+- "nig-nog"
+- "nigga"
+- "nigger"
+- "nigguh"
+- "nip"
+- "pajeet"
+- "paki"
+- "pickaninnie"
+- "pickaninny"
+- "prostitute"
+- "pussie"
+- "pussy"
+- "raghead"
+- "retard"
+- "sambo"
+- "shemale"
+- "skank"
+- "slut"
+- "soyboy"
+- "spade"
+- "sperg"
+- "spic"
+- "spook"
+- "squaw"
+- "tard"
+- "tits"
+- "titt"
+- "cum"
+- "trannie"
+- "tranny"
+- "twat"
+- "wetback"
+- "whore"
+- "wigger"
+###############################
+#                             #
+#          CloverBOT          #
+#                             #
+###############################
+
+CBOT_VERSION: "1.5"
+# DO NOT EDIT THIS!

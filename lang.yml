@@ -1,0 +1,69 @@
+#########################################  MUST READ  ############################################
+#                                                                                                #
+#  [!] Must Reload the bot for settings to apply. (you can do that by the "reload" command) [!]  #
+#                        [♥] Thank your for using Clover Bot [♥]                                 #
+#               [?] For any questions join the discord or contact Axie#2121 [?]                  #
+#                  [?] CloverBOT Discord: https://discord.gg/hM7czvhGEF [?]                      #
+#                                                                                                #
+#########################################  MUST READ  ############################################
+
+
+###############################
+#                             #
+#          Messages           #
+#                             #
+###############################
+
+Filter_Message: "🚫 **Wait**, You can't say that word in here."
+
+Spam_Message: "🕙 **CHILL**, you are going too fast wait **{seconds}.{milliseconds}** seconds!"
+
+Ad_Message: "🔗 **NOPE**, You can't send links here."
+
+###############################
+#                             #
+#          Defaluts           #
+#                             #
+###############################
+
+No_Permission_Message: "Sorry, You don't have {perm}."
+
+No_Role_Message: "Sorry, you need `{role}` role to use that."
+
+No_Mention_Message: "You forgot to mention anyone."
+
+###############################
+#                             #
+#           Errors            #
+#                             #
+###############################
+
+Err_Role_Message: "The `{role}` role was not found, please create it."
+
+###############################
+#                             #
+#         Giveaways           #
+#                             #
+###############################
+
+Max_Giveaways_Message: "You can't do that, You've reached max active giveaways"
+
+Time_Question_Message: "How long would you like the giveaway to be?"
+
+Name_Question_Message: "What do you want to giveaway?"
+
+About_Question_Message: "Please explain the item you are giving away."
+
+Winners_Question_Message: "How many winners will there be?"
+
+###############################
+#                             #
+#          Moderation         #
+#                             #
+###############################
+
+Mod_User_Already_Muted: "This user is already muted."
+
+Mod_Mute_No_Reason: "Please provide a reason to mute a user."
+
+Mod_Invalid_Mute_Time: "You've typed an invaild time."
