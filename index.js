@@ -852,4 +852,4 @@ client.on("voiceStateUpdate", (voiceOld, voiceNew) => {
     utils.LogSend(voiceLeave, client, config);
   }
 });
-client.login(config.Client_Token);
+client.login(process.env.Client_Token);
