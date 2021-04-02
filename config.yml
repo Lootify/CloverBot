@@ -18,7 +18,8 @@ Client_Prefix: "!"
 # the bot prefix that commands will run with. (Ex. if you put "!", your help command will be "!help")
 Client_Status: "!help"
 # The bot Status that will show under your bots name. Put "Null" for no status
-Client_Token: ""
+Client_Token: "THIS FEATURE IS DISABLED GO TO .ENV INSTEAD" 
+# THIS FEATURE IS DISABLED GO TO .ENV INSTEAD
 # the bot token that you get after you create a bot (https://discord.com/developers/applications).
 Client_Owner_ID: "573990610986598400"
 # Your Discord ID (Enable Developer mode from apperance tap in settings to get it). 
