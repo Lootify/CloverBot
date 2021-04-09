@@ -49,10 +49,8 @@ setupConfig();
 client.on("ready", () => {
 up();
 checkGiveaway();
-checkStatuses();
 checkMutes()
 setInterval(checkGiveaway, 60000);
-setInterval(checkStatuses, 60000);
 setInterval(checkMutes, 60000);
 if (config.Client_Status !== "Null") {
 client.user.setPresence({
@@ -365,39 +363,6 @@ process.exit()
 client.destroy();
 }
 }
-  // ADVERTISEMENT CHECK
-  function checkStatuses() {
-    if (config.AntiAds_System && config.AntiAds_Status_System.toLowerCase() == "true") {
-      const whitelist = Object.values(config.AntiAds_Whitelisted_Websites).map(w => w.toLowerCase());
-      client.guilds.cache.forEach(guild => {
-        const channel = guild.channels.cache.find(c => c.name.toLowerCase() == config.AntiAds_Channel.toLowerCase());
-        const bypass = guild.roles.cache.find(r => r.name.toLowerCase() == config.AntiAds_Bypass_Role.toLowerCase());
-        if (!channel) return;
-        guild.members.fetch().then(members => {
-          members.array().forEach(member => {
-            const status = member.user.presence.game;
-            if (status) {
-              if (member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition >= bypass.calculatedPosition) return;
-              const check = [status.name, status.url, status.details, status.state, status.assets ? status.assets.largeText : '', status.assets ? status.assets.smallText : ''];
-              check.forEach(c => {
-                if (/(https?:\/\/|www\.|https?:\/\/www\.).+/.exec(c)) {
-                  if (!whitelist.find(w => c.toLowerCase().includes(w.toLowerCase()))) {
-                    const embed = new Discord.MessageEmbed()
-                      .setColor(config.AntiAds_Embed_Color)
-                      .setTitle("**ADVERTISEMENT DETECTED**")
-                      .addField("User", member)
-                      .addField("User ID", member.id)
-                      .addField("Detected", c);
-                    channel.send(embed);
-                  }
-                }
-              })
-            }
-          })
-        })
-      })
-    }
-  }
 client.on("messageDelete", message => {
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
