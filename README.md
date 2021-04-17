@@ -7,6 +7,6 @@ a multi-purpose bot with a ton of (Music, minecraft, moderation, logging, giveaw
 
 
 
-# Made by loot#2121 🚗
+# Made by Loot#2121 🚗
 
 
